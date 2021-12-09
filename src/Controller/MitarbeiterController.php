@@ -134,8 +134,6 @@ class MitarbeiterController extends AbstractController
         ]);
 
     }
-
-
         return $this->render('employees/newEmployee.html.twig', [
             'form'=>$form->createView(),
             'controller_name' => 'MainController',
