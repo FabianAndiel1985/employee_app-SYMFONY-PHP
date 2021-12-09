@@ -3,12 +3,11 @@
 {% block title %}Hello MitarbeiterController!{% endblock %}
 
 {% block body %}
-<style>
-    .form-wrapper { border:2px solid black; padding:1em; width:200px;margin: 40px auto; }
-    .save{margin:9px 0px 0px 0px}
-</style>
 
-<div class="form-wrapper">
+
+<div
+class="w-50 mx-auto mt-4"
+>
 {{ form_start(form) }}
     
         <div class="label">
@@ -56,11 +55,11 @@
          <div class="label">
             {{ form_label(form.city) }}
         </div>        
-        <div class="col">
+        <div class="col mb-4">
             {{ form_widget(form.city) }}
         </div>
 
 {{ form_end(form) }}
-</div>
+<div>
 
 {% endblock %}
